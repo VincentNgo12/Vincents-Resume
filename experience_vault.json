@@ -1,0 +1,362 @@
+{
+  "version": "1.0.0",
+  "generated_date": "2026-08-23",
+  "metadata": {
+    "target_domains": [
+      "Embedded Systems",
+      "Firmware Development",
+      "Hardware-Software Integration",
+      "Aerospace & Defense Systems",
+      "Low-Power Electronics"
+    ],
+    "master_tech_index": {
+      "languages": [
+        "C (C99 / Embedded C)",
+        "C++ (C++14 / C++17 / Embedded OOP)",
+        "C# (.NET 8.0 / Async Pipeline)",
+        "Dart (Flutter Framework)",
+        "Python (pySerial, pyModbus, Telemetry Analysis)",
+        "PowerShell & Bash (Automated Build & Flash CI/CD)",
+        "JavaScript & HTML5 (Web Bluetooth API)",
+        "Rust (Embedded Flight Software, Memory Safety, Async Ground CLI)",
+        "VHDL & Verilog (FPGA Digital Logic Design, Hardware Acceleration)"
+      ],
+      "frameworks_and_rtos": [
+        "FreeRTOS (Symmetric Multiprocessing, Tasks, Queues, Mutexes, Task Notifications, Critical Sections, Tickless Idle)",
+        "ESP-IDF (v5.x HAL, NVS, IRAM_ATTR ISR Handlers, Custom Partition Tables)",
+        "Microchip MPLAB XC8 Toolchain (xc8-cc native compilation)",
+        "TI Code Composer Studio (CCS) & MSP430 CGT Toolchain (TI v21.6.1.LTS)",
+        "TI Ultrasonic Sensing Software Library (ussSWLib v02_40_00_00)",
+        "TI IQmathLib / QMathLib (Fixed-Point Math Acceleration)",
+        "NimBLE-Arduino (High-Efficiency BLE Stack)",
+        "Arduino-ESP32 / PlatformIO Core (Multi-environment builds)",
+        "Flutter / Dart Reactive State Framework (Provider, StreamControllers, ByteData)",
+        ".NET Core / System.IO.Pipelines High-Throughput Stream Parsing",
+        "ARM CMSIS-DSP Library (Optimized CFFT, 32-bit Floating-Point Signal Processing)",
+        "Embedded Linux & Yocto / PetaLinux Build Toolchains (Custom Kernel & Rootfs Deployment)",
+        "Bare-Metal CMSIS & Direct Register Configuration (No HAL/OS, GNU Arm Toolchain)"
+      ],
+      "hardware_platforms": [
+        "Espressif ESP32-S3 (Dual-Core 32-bit Xtensa LX7 @ 240 MHz, 8MB/16MB Flash, OPI PSRAM)",
+        "Espressif ESP32-C6 (Single-Core 32-bit RISC-V @ 160 MHz, BLE 5.0, Wi-Fi 6)",
+        "Texas Instruments MSP430FR6043 (16-bit MSP430X RISC @ 16 MHz, LEA, SAPH, SDHS @ 80 MHz HSPLL, FRAM)",
+        "Microchip PIC18F24Q10 (8-bit Microcontroller, 10-bit ADC with Computation)",
+        "AutomationDirect SureServo2 SV2A-2550 (4.5/5.5 kW 230VAC 3-Phase Servo Drive, 325V+ DC Bus)",
+        "AutomationDirect SureServo2 SV2H-245N (4.5 kW AC Brushless Servo Motor, 24-bit Absolute Optical Encoder)",
+        "SureGear PGB155-05A6 (5:1 Right-Angle Planetary Reducer)",
+        "Texas Instruments EVM430-FR6043 Ultrasonic Evaluation Board",
+        "Adafruit ESP32-S3 Feather & Custom Mixed-Signal Acquisition PCBs",
+        "STM32F103C8 'Blue Pill' (ARM Cortex-M3 @ 72 MHz, 64KB Flash, 20KB SRAM)",
+        "Espressif ESP32 Feather V2 (Dual-Core 32-bit Xtensa LX6 @ 240 MHz, Wi-Fi/BLE)",
+        "AlbertaSat Ex-Alta 3 On-Board Computer (3U CubeSat Heterogeneous OBC, LEO Environment)",
+        "Field-Programmable Gate Arrays (Xilinx/Altera FPGAs for Satellite Digital Logic)"
+      ],
+      "protocols": [
+        "BLE (Bluetooth Low Energy 5.0, GATT Server, Nordic UART Service NUS, Custom 42-Byte/180-Byte Binary Profiles, Web Bluetooth)",
+        "UART / USART (115200 8N1, 9600 8E1 ROM BSL Framing, Packet Checksumming, High-Speed DMA/Serial)",
+        "I2C (Fast Mode 400 kHz, 9-Clock Bus Contention Recovery, Clock Stretching, Multi-Device Addressing)",
+        "SPI (High-Speed Multi-Drop Peripheral Sharing, Mutex Bus Arbitration, Custom CS Sequencing)",
+        "TI Spy-Bi-Wire (SBW 2-Wire JTAG Protocol, Bit-Banged Microsecond Timing, ROM Bootloader Entry)",
+        "RS-485 / Modbus RTU (Industrial Differential Telemetry, 19200 Baud, 8N2, CRC-16)",
+        "4–20 mA Current Loop (Industrial Transducer Interface, Precision Shunt Signal Conditioning)",
+        "Wi-Fi (802.11 b/g/n Station & Soft-AP, Captive Portal, HTTP/HTTPS Client REST API, OTA Firmware Streaming)",
+        "Safe Torque Off (STO Dual-Channel SIL3 / PL e Hardware Interlock Loop)",
+        "CAN Bus (Controller Area Network for Deterministic Multi-Node Satellite Bus Telemetry)",
+        "WS2812B Single-Wire Protocol (800 kHz Precise Timer PWM & Nanosecond Bit-Encoded Waveforms)",
+        "DMA Bus Transfer (Direct Memory Access for Zero-Overhead ADC Sampling and Non-Blocking Display Refresh)"
+      ],
+      "eda_and_tools": [
+        "KiCad EDA (v8.x / v10.x, 4-layer High-Density Mixed-Signal Stackup, Hierarchical Schematics, DFM/DFA)",
+        "Nordic Power Profiler Kit II (PPK2, High-Fidelity Multi-State Current Profiling)",
+        "Digital Storage Oscilloscopes (DSO) & Logic Analyzers (Rigol, Saleae I2C/SPI/UART Protocol Analyzers)",
+        "TI Ultrasonic Sensing Design Center GUI (USS GUI, Waveform Tuning & Envelope Capture)",
+        "SureServo2 Pro (Motion Tuning, Digital I/O Remapping, Real-Time Diagnostic Oscilloscope)",
+        "STONE TOOL GUI (Color TFT Touchscreen HMI Designer)",
+        "Fluke High-Voltage Digital Multimeters (DMMs)",
+        "Microchip PICkit 4 / PICkit 5 / MPLAB SNAP ICSP Programmers",
+        "TI MSP-FET / eZ-FET Spy-Bi-Wire Hardware Debuggers",
+        "PlatformIO CLI / VS Code / Arduino IDE 2.x",
+        "WSL2 (Windows Subsystem for Linux Native Cross-Toolchains)",
+        "GNU Arm Embedded Toolchain & GDB (arm-none-eabi-gcc, Register-Level Debugging, Profiling)",
+        "SMT PCB Assembly & Soldering (Solder Paste Stenciling, Manual SMD Soldering, Hot Air Rework)",
+        "Aerospace Clean Room Testing (ISO 8 / Class 100,000 Certified Environment, Flight Subsystem Qualification)",
+        "3D CAD & Rapid Enclosure Prototyping (Multi-Part Wearable Watch Enclosures)"
+      ]
+    }
+  },
+  "work_experience": [
+    {
+      "id": "rdp-cimtac-2026",
+      "organization": "Red Deer Polytechnic (CIM-TAC / Energy Innovation Centre)",
+      "role": "Electrical and Control Engineering Intern",
+      "location": "Red Deer, AB",
+      "start_date": "2026-05",
+      "end_date": "2026-08",
+      "context_summary": "Spearheaded advanced embedded systems development, mixed-signal hardware bring-up, multi-core FreeRTOS firmware architecture, and high-power industrial control integration across multidisciplinary applied research projects funded by industry partners (CareChanger, DriftGolf, Curling Canada, and Fortis). Engineered low-power sensing subsystems, in-circuit ROM bootloaders, dual-core telemetry streaming pipelines, and 4.5 kW 3-phase industrial motor drives.",
+      "sub_projects": [
+        {
+          "id": "carechanger-patient-monitoring",
+          "name": "CareChanger: Non-Invasive Medical Occupancy & Voiding Telemetry System",
+          "client_or_context": "CareChanger Inc. (Geriatric Care / Assistive Medical Technology Client)",
+          "timeline": "2026-05 – 2026-08",
+          "tags": [
+            "Embedded C/C++",
+            "ESP32-S3",
+            "PIC18F24Q10",
+            "FreeRTOS",
+            "Low-Power Optimization",
+            "Mixed-Signal PCB",
+            "Digital Signal Processing",
+            "Sensirion SHT40",
+            "E-Paper Display",
+            "WSL Toolchains"
+          ],
+          "technical_problem": "Medical geriatric-care incontinence monitoring required continuous, non-invasive patient bed occupancy tracking and immediate (<1 s) urinary voiding detection with zero false alarms from body sweat or room thermal drift. The existing prototype suffered from excessive quiescent power draw (85.71 mA average), FreeRTOS kernel memory panics / soft-locks during multi-threaded display shutdown, brittle static thresholding triggering false void events, and toolchain interop crashes between Linux WSL and Microchip Windows-centric compilers.",
+          "architecture_and_implementation": "Engineered a dual-MCU hierarchical architecture comprising a Microchip PIC18F24Q10 sensor head and an Espressif ESP32-S3 dual-core host controller. Programmed the 8-bit PIC18F24Q10 to acquire 16-bit charge-time capacitive occupancy telemetry and bit-bang I2C across dual Sensirion SHT40 sensors (addresses 0x44 and 0x45), streaming 1 Hz framed UART packets (#ALL,[Cap],[P_T],[P_H],[R_T],[R_H],!) with periodic 200 mW de-humidification heating pulses. On the ESP32-S3, architected a dual-core FreeRTOS pipeline allocating display (EPD / Nextion), networking (Wi-Fi / HTTPS), and battery fuel gauge monitoring (MAX17048) to Core 0, while dedicating Core 1 to signal processing, local SD FAT32 logging, and finite state machine (FSM) evaluation. Replaced static limits with a dynamic rate-of-change (dx/dt) state machine backed by a 300-second SRAM rolling ring buffer with dynamic stepped lookback windowing (0s, 30s, 60s, 120s, 300s) and an Exponential Moving Average (EMA, shift factor 6) low-pass baseline filter.",
+          "debugging_and_root_cause": "Diagnosed a critical FreeRTOS zombie-state soft-lock caused by synchronous queue blocking when task teardown conflicted with E-paper refresh cycles prior to sleep; resolved by implementing a direct queue-bypass display flush sequence that cleanly writes solid black to the EPD before cutting peripheral rails via high-side P-MOSFET gate control. Refactored a power-draining 60-second polling loop by implementing edge-triggered hardware GPIO interrupts routed directly to an IRAM-safe ISR (IRAM_ATTR) triggering FreeRTOS task notifications (vTaskNotifyGiveFromISR). Converted an infinite blocking primitive (portMAX_DELAY) to a hybrid watchdog scheduling timer (pdMS_TO_TICKS(60000)) to guarantee instant HMI response on VBUS power events while maintaining low-power sampling. Bypassed host-dependent IDE wrapper crashes by designing a native Linux WSL compilation pipeline utilizing Microchip xc8-cc.",
+          "bullet_bank": {
+            "firmware_focus": "Architected dual-core FreeRTOS firmware on ESP32-S3 and bare-metal C on PIC18F24Q10, implementing a 300s SRAM circular buffer and EMA low-pass filter to eliminate false urinary voiding triggers across field trials.",
+            "hardware_focus": "Engineered mixed-signal acquisition hardware integrating flexible PCB capacitive sensor arrays with dual-SHT40 environmental sensors, high-side P-MOSFET peripheral power gating, and MAX17048 I2C fuel gauging.",
+            "low_power_focus": "Profiled and slashed system power draw by 70.4% (from 85.71 mA to 25.33 mA average) via IRAM-safe edge-triggered GPIO ISRs, FreeRTOS task notifications, and hybrid watchdog sleep scheduling.",
+            "systems_integration_focus": "Designed a native Linux WSL cross-compilation pipeline for the Microchip xc8-cc toolchain and implemented a queue-bypass display shutdown routine, preventing kernel panics during E-paper refresh cycles."
+          }
+        },
+        {
+          "id": "driftgolf-ultrasonic-anemometer",
+          "name": "DriftGolf: Dual-MCU Ultrasonic Anemometer & In-Circuit BSL Flasher Subsystem",
+          "client_or_context": "DriftGolf (Sports Technology & Aerodynamic Wind Telemetry Client)",
+          "timeline": "2026-05 – 2026-08",
+          "tags": [
+            "Embedded C/C++",
+            "ESP32-C6",
+            "TI MSP430FR6043",
+            "Ultrasonic Time-of-Flight",
+            "In-Circuit Bootloader",
+            "Spy-Bi-Wire",
+            "NimBLE",
+            "FreeRTOS",
+            "Power Profiler Kit II",
+            "Cross-Toolchain Engineering"
+          ],
+          "technical_problem": "Precision 2D ultrasonic wind vector acquisition demanded microsecond Time-of-Flight (TOF) differential measurements on a low-power co-processor with in-field firmware upgradability from an ESP32-C6 host MCU. Critical failure modes included parasitic back-powering holding the target in brownout, ROM BSL UART bus contention against active LCD glass pins, cycle skipping during ultrasonic correlation, watchdog timer panics during OTA streaming, and binary bloat exceeding ESP32 flash partitions under default BLE stacks.",
+          "architecture_and_implementation": "Developed an asymmetrical dual-MCU architecture pairing an ESP32-C6 (32-bit RISC-V @ 160 MHz) host master with a TI MSP430FR6043 (16-bit MSP430X @ 16 MHz with Hardware LEA, SAPH, and SDHS @ 80 MHz HSPLL) ultrasonic co-processor. Multiplexed a single ultrasonic channel across two orthogonal transducer pairs using a TI TS3A24159 low-resistance (0.3Ω) dual SPDT analog switch with 10µs settling delays and 50ms inter-axis acoustic ringdown spacing. Designed an autonomous, non-blocking in-circuit bootloader (BSL) engine in modern C++ on the ESP32 that bit-bangs the TI Spy-Bi-Wire (SBW) hardware entry sequence within FreeRTOS critical sections (portENTER_CRITICAL), executes mass erase (0x15), password unlock (0x11), baud-rate switching (0x52 to 115200 baud), and streams 240-byte CRC-16-CCITT validated chunks to 20-bit extended FRAM addresses (@18000). Migrated the host Bluetooth stack from Bluedroid to NimBLE-Arduino, shrinking binary footprint by ~600 KB (>35%) to accommodate an 8MB dual-app OTA layout (app0/app1 3.3 MB each).",
+          "debugging_and_root_cause": "Diagnosed target bootloader soft-locks caused by parasitic back-powering through internal ESD protection diodes; resolved by dynamically forcing all shared UART (GPIO 18/19), RST (GPIO 15), and TEST (GPIO 14) lines into High-Z input states prior to opening the high-side P-MOSFET power gate switch. Fixed target defaulting to I2C BSL mode instead of UART by actively driving UART TX HIGH prior to releasing the SBW reset sequence. Eliminated ultrasonic cycle skipping (+-5µs TOF jumps) under turbulence by configuring wide-band Hilbert transform algorithms and multi-tone chirp excitation (180–210 kHz, 12 trill pulses) in USS_userConfig.h. Resolved Code Composer Studio (CCS) and MSP430 CGT linker failures by repairing IQmathLib / ussSWLib symbol paths and enforcing --data_model=large memory alignment. Validated BSL transitions from low-power sleep to 2.0 mA active ROM execution using a Nordic Power Profiler Kit II (PPK2).",
+          "bullet_bank": {
+            "firmware_focus": "Engineered an in-circuit Spy-Bi-Wire ROM BSL flasher in C++/FreeRTOS on ESP32-C6, streaming CRC-16-CCITT validated 240B payloads to 20-bit extended FRAM addresses on MSP430FR6043 at 115,200 baud.",
+            "hardware_focus": "Eliminated destructive parasitic back-powering across shared bus lines via High-Z GPIO defensive sequencing and high-side P-MOSFET power gating, verified via Nordic Power Profiler Kit II (PPK2).",
+            "low_power_focus": "Configured wide-band Hilbert multi-tone chirp excitation (180–210 kHz) and dual SPDT multiplexing on MSP430FR6043, achieving sub-microsecond Time-of-Flight wind vector acquisition with LPM0 standby.",
+            "systems_integration_focus": "Refactored host BLE firmware to NimBLE-Arduino, reducing static binary footprint by ~600 KB (over 35%) and architecting an 8MB symmetrical dual-app OTA partition table with automated arduino-cli CI/CD."
+          }
+        },
+        {
+          "id": "curling-canada-biomechanical-stick",
+          "name": "Instrumented Wheelchair Curling Delivery Stick (Project CIM26-017)",
+          "client_or_context": "Curling Canada / Paralympic Biomechanical Telemetry Consortium",
+          "timeline": "2026-05 – 2026-08",
+          "tags": [
+            "Mixed-Signal PCB",
+            "ESP32-S3",
+            "ST LSM6DSRX",
+            "SingleTact Capacitive Force",
+            "FreeRTOS",
+            "NimBLE",
+            "Power Path Management",
+            "Low-Noise Analog",
+            "DFM/DFA Optimization",
+            "Flutter"
+          ],
+          "technical_problem": "Paralympic wheelchair curling delivery sticks required high-frequency synchronized kinetic and kinematic telemetry acquisition (6-DoF acceleration, angular rates, 3D shaft orientation, and dynamic axial/planar release forces) within an extremely confined 0.8-inch (20.3 mm) cylindrical carbon-fiber shaft. Engineering challenges included severe voltage attenuation and reverse-current back-feeding across Schottky diode-OR circuits, IMU zero-rate bias drift caused by thermal proximity to battery charging ICs, switching noise corrupting sensitive force sensor analog rails, and strict single-sided DFM space constraints.",
+          "architecture_and_implementation": "Designed a high-density 4-layer mixed-signal PCB (65 mm x 18 mm) powered by an ESP32-S3 microcontroller, interfacing an STMicroelectronics LSM6DSRX 6-DoF IMU and a SingleTact S15 micro-capacitive force sensor. Implemented a dual Texas Instruments LM66100 cross-coupled ideal diode power-path architecture to eliminate diode forward voltage drop, recover critical LDO headroom, and prevent reverse back-powering of unpowered USB host ports. Isolated the 5.0V analog DAQ rail using a high-side switched-capacitor boost converter (TPS60151) filtered by a dedicated RC low-pass network (22Ω / 10µF) to eliminate high-frequency ripple. Structured dual-core FreeRTOS firmware dedicating Core 1 to synchronized 25–100 Hz sensor acquisition, dynamic 3D shaft attitude estimation, and force vector decomposition, while Core 0 managed NimBLE Nordic UART Service (NUS) batch packetizing (180-byte frames containing 4 x 44-byte samples) and streaming to a companion Flutter coaching app.",
+          "debugging_and_root_cause": "Identified IMU zero-rate output bias drift induced by thermal gradients from the MCP73831 linear LiPo battery charger during high-rate charging; resolved by physically segregating the charger and high-current traces onto a dedicated bottom power layer, thermally coupling the ground plane to the aluminum/USB-C structural chassis as a heatsink. Mitigated ceramic capacitor DC bias capacitance loss on sensitive power rails by preserving 0603/0805 footprints while down-sizing digital signals and bootstrapping passives to 0402 form-factors for single-sided SMT pick-and-place assembly. Resolved BLE discovery and unaligned memory fault vulnerabilities on ESP32-S3 by enforcing Legacy ADV_IND advertising frames and implementing stack-aligned intermediate telemetry buffers.",
+          "bullet_bank": {
+            "firmware_focus": "Architected dual-core FreeRTOS firmware on ESP32-S3, streaming 180B batched binary telemetry packets (IMU & force vectors) at 50 Hz over NimBLE Nordic UART Service to a real-time Flutter coaching app.",
+            "hardware_focus": "Engineered an ultra-compact 4-layer mixed-signal PCB (65 mm x 18 mm) fitting inside a 0.8-inch carbon fiber shaft, featuring dual LM66100 ideal diode power-path management and TPS60151 low-noise boost regulation.",
+            "low_power_focus": "Suppressed IMU thermal zero-rate drift and recovered critical LDO voltage headroom by isolating linear battery charging heat sinks and replacing Schottky diode-OR drops with ideal diode ICs.",
+            "systems_integration_focus": "Developed a unified Hardware Abstraction Layer (HAL) and PlatformIO multi-target build system supporting seamless compilation across custom PCB and prototyping hardware revisions."
+          }
+        },
+        {
+          "id": "fortis-string-line-tensioner",
+          "name": "Fortis String Line Tensioner: 4.5 kW Closed-Loop Winch & Industrial Control Panel",
+          "client_or_context": "Fortis / Energy Innovation Centre (Industrial Tethered UAV & Winch Systems Client)",
+          "timeline": "2026-05 – 2026-08",
+          "tags": [
+            "Industrial Automation",
+            "High-Voltage Power Distribution",
+            "3-Phase 230VAC",
+            "SureServo2",
+            "Motion Control",
+            "FreeRTOS",
+            "Safe Torque Off (STO)",
+            "Isolated Mixed-Signal PCB",
+            "Modbus RTU",
+            "KiCad"
+          ],
+          "technical_problem": "Tethered unmanned aerial vehicles (UAVs) and heavy winch deployment platforms required dynamic closed-loop tether tension regulation (up to 300 lbf / 1,334 N at 12.5 m/s) with sub-10 ms emergency response. High-power bring-up presented severe risks including industrial EMI coupling into microcontrollers, ground loops between 325V+ DC drive buses and low-voltage logic, regenerative braking overvoltage trips (AL002) during rapid deceleration, and catastrophic failure modes during high-voltage 230 VAC 3-phase energization.",
+          "architecture_and_implementation": "Engineered an industrial high-voltage power distribution and motion control system powered by a 230 VAC 3-phase supply (fed by a 10.8 kW industrial generator), incorporating a 3-pole main disconnect, fast-acting branch fusing, a WEG magnetic contactor, and a Roxburgh KMF350A 3-phase EMI filter. Integrated an AutomationDirect 5.5 kW SureServo2 (SV2A-2550) drive and 4.5 kW AC brushless servo motor (SV2H-245N with 24-bit absolute optical encoder) mated to a 5:1 SureGear planetary reducer (PGB155-05A6). Designed a dual-layer fail-safe safety architecture wiring dual-channel Safe Torque Off (STO CN10) via a Dold safety relay, achieving immediate sub-10ms hardware pulse inhibition. Designed and validated a custom isolated interface PCB hosting high-speed optocouplers (TLP2361), digital isolators (ISO7761), precision op-amp level-shifting (OPA2192 on +-12V rails) for +-10V analog command/feedback, an isolated 4–20 mA load cell DAQ (ATO-LCTR-NTB3K with ADS1115 via ISO1640), and an isolated RS-485 Modbus RTU interface (ADM2587E). Implemented a 100 Hz deterministic FreeRTOS closed-loop PID tension control task on ESP32-S3 Core 1 interfacing an 8.0-inch STONE color touchscreen HMI.",
+          "debugging_and_root_cause": "Conducted systematic cold-circuit isolation resistance verifications (>10 MΩ), live 3-phase line-to-line/ground Fluke DMM checks, and real-time capacitor bank bleed-down monitoring across the 325V+ DC bus before live energization. Overcame unwired limit switch drive alarms (AL013/AL015) by safely remapping digital inputs (P2.010–P2.017) and configured RAM-only parameter write registers (P2.030 = 5) via SureServo2 Pro over USB to prevent drive EEPROM wear during real-time tuning. Verified external 10Ω, 1000W regenerative braking resistor jumper topology (P1-P2, P3/C), eliminating internal DC bus overvoltage trips (AL002) during deceleration transients. Executed clean 20 RPM manual software JOG velocity tests (P4.005) and calibrated 4–20 mA load cell shunt offsets with sub-millivolt precision.",
+          "bullet_bank": {
+            "firmware_focus": "Developed a 100 Hz deterministic FreeRTOS closed-loop PID tension control task on ESP32-S3, regulating tether tensions up to 300 lbf (1,334 N) and velocities up to 12.5 m/s via isolated +-10V DAC/ADC interfaces.",
+            "hardware_focus": "Engineered an industrial 230 VAC 3-phase power panel with Roxburgh EMI filtering, Dold dual-channel Safe Torque Off (STO) safety relays, and a custom isolated mixed-signal interface PCB with 2.5 kV galvanic isolation.",
+            "low_power_focus": "Configured dynamic energy dissipation topologies utilizing a 10Ω 1000W external braking resistor and precision op-amp level-shifters, safeguarding low-voltage logic from 325V+ DC regenerative transients.",
+            "systems_integration_focus": "Commissioned a 4.5 kW AC servo drive system via SureServo2 Pro, executing systematic cold-circuit isolation checks (>10 MΩ) and live 3-phase bring-up with zero hardware faults."
+          }
+        }
+      ]
+    }
+  ],
+  "extracurricular_and_independent_projects": [
+    {
+      "id": "async-telemetry-cli-engine",
+      "name": "Asynchronous High-Throughput Serial & BLE Telemetry Engine",
+      "organization_or_event": "Independent / Engineering Diagnostic Tooling",
+      "timeline": "2026-06 – 2026-08",
+      "tags": [
+        "C#",
+        ".NET 8.0",
+        "Async/Await",
+        "System.IO.Pipelines",
+        "BLE",
+        "Serial Framing",
+        "Cross-Platform"
+      ],
+      "technical_problem": "High-frequency streaming telemetry from multi-sensor embedded devices routinely caused GUI event loop thread-locking, stdout buffer backpressure stalls, and dropped binary packets during sustained serial and BLE data logging on desktop host applications.",
+      "architecture_and_implementation": "Architected a high-performance C# .NET 8.0 asynchronous console and GUI telemetry pipeline utilizing System.IO.Pipelines and thread-safe channels (System.Threading.Channels). Implemented a zero-allocation byte-stream framing reader capable of isolating start/end-of-frame delimiters, verifying packet checksums on the fly, and parsing mixed-endian telemetry structures (Big-Endian IMU/Mag integers and Little-Endian IEEE-754 floats) without blocking the UI dispatcher thread.",
+      "debugging_and_root_cause": "Identified memory leaks and thread lock contention caused by unbuffered console writes and unclosed event subscriptions during high-throughput BLE streaming; resolved by decoupling serial ingestion into dedicated background worker tasks communicating via bounded lock-free channels.",
+      "bullet_bank": {
+        "primary_focus": "Architected a multi-threaded C# .NET 8.0 telemetry engine using System.IO.Pipelines and thread-safe channels, eliminating stdout buffer stalls and achieving zero packet loss at high streaming rates.",
+        "secondary_focus": "Implemented a resilient byte-stream packet framing and validation layer, decoding mixed-endian multi-sensor payloads and handling unexpected hardware disconnects gracefully."
+      }
+    },
+    {
+      "id": "headless-embedded-build-toolchain",
+      "name": "Automated Headless Embedded Build & In-Circuit Deployment Pipeline",
+      "organization_or_event": "Independent / DevOps & Embedded Tooling",
+      "timeline": "2026-05 – 2026-08",
+      "tags": [
+        "PowerShell",
+        "Bash",
+        "arduino-cli",
+        "WSL2 Interop",
+        "Microchip XC8",
+        "CI/CD",
+        "OTA Deployment"
+      ],
+      "technical_problem": "Multi-vendor firmware toolchains (ESP-IDF, Arduino, Microchip XC8, TI CCS) suffered from fragile host-dependent IDE wrappers, host OS path clashes (MZ/cmd.exe execution errors in WSL), and error-prone manual flashing procedures across distributed target boards.",
+      "architecture_and_implementation": "Engineered an automated cross-platform PowerShell and Bash compilation pipeline wrapping arduino-cli and native Linux xc8-cc. Encapsulated multi-target Fully Qualified Board Names (FQBNs), custom flash partition mapping, GCC size-optimization flags (-Os), and automated hex/TI-TXT staging for OTA and in-circuit bootloaders.",
+      "debugging_and_root_cause": "Resolved path translation and binary execution clashes between Windows and WSL2 environments by directly wrapping compiler binaries within POSIX-compliant shell scripts and automating environment variable exports.",
+      "bullet_bank": {
+        "primary_focus": "Engineered an automated headless build and flashing pipeline around arduino-cli and native Linux xc8-cc, cutting firmware compilation and deployment overhead by over 60%.",
+        "secondary_focus": "Standardized multi-target FQBN build profiles and automated OTA binary staging, eliminating cross-platform host OS execution conflicts across distributed developer environments."
+      }
+    },
+    {
+      "id": "reactive-biomechanical-coaching-app",
+      "name": "Cross-Platform Reactive Biomechanical Telemetry Dashboard",
+      "organization_or_event": "Independent / Biomechanical Diagnostics Platform",
+      "timeline": "2026-06 – 2026-08",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Web Bluetooth",
+        "Reactive State",
+        "Provider",
+        "Data Visualization"
+      ],
+      "technical_problem": "Live biomechanical coaching during athletic trials required sub-20ms rendering of multi-axis force vectors, angular velocities, and shaft orientations without UI stutter or memory leaks caused by unbounded high-frequency BLE streams.",
+      "architecture_and_implementation": "Built a responsive cross-platform Flutter application (desktop and tablet) adhering to strict single-threaded Dart VM isolate event loop principles. Structured data parsing via ByteData Little-Endian buffer decoding, piped into a Provider-based reactive state architecture. Implemented selective tree repainting using RepaintBoundary and fl_chart canvases to graph real-time kinetic curves while simultaneously streaming to a local CSV session storage engine.",
+      "debugging_and_root_cause": "Eliminated UI thread frame drops (>16.6 ms) by migrating heavy binary frame decompression out of the main rendering widgets and properly managing StreamSubscription and Timer lifecycles to prevent garbage collection leaks.",
+      "bullet_bank": {
+        "primary_focus": "Developed a cross-platform Flutter coaching dashboard parsing 180B binary BLE telemetry packets in real-time, achieving responsive 60 FPS multi-axis kinetic graphing.",
+        "secondary_focus": "Optimized Dart VM event loop performance via ByteData buffer decoding and RepaintBoundary rendering isolation, preventing UI frame drops during high-frequency data logging."
+      }
+    },
+    {
+      "id": "bare-metal-led-audio-visualizer",
+      "name": "Bare-Metal Real-Time LED Audio Spectrum Visualizer",
+      "organization_or_event": "Independent / Embedded DSP & Hardware Systems",
+      "timeline": "2025-01 – 2025-04",
+      "tags": [
+        "Bare-Metal C",
+        "STM32F103C8",
+        "ARM Cortex-M3",
+        "CMSIS-DSP",
+        "Fast Fourier Transform (FFT)",
+        "Direct Memory Access (DMA)",
+        "WS2812B Protocol",
+        "Timer PWM",
+        "GDB Profiling",
+        "Oscilloscope",
+        "Logic Analyzer"
+      ],
+      "technical_problem": "Converting continuous real-time analog audio into dynamic 32-band spectrum LED visualization within a strict <20 ms latency target on an ARM Cortex-M3 microcontroller with only 20 KB SRAM. Initial non-optimized FFT implementations suffered from visual lag and dropped frames (28 ms processing latency), while driving high-precision 800 kHz WS2812B single-wire protocol demanded nanosecond-accurate pulse timing without stalling real-time signal capture.",
+      "architecture_and_implementation": "Architected a zero-overhead, bare-metal C data pipeline on the STM32F103C8 (Blue Pill) configured entirely via direct register manipulation (RCC, GPIO, ADC, TIM, DMA) using arm-none-eabi-gcc without HAL or OS overhead. Fed electret microphone output to ADC1 in continuous sampling mode with DMA Channel 1 streaming 1024 raw 10-bit audio samples directly into an SRAM ring buffer. Scheduled periodic 10 ms acquisition cycles via Timer 3 interrupts. Executed 1024-point Complex FFT (CFFT) using the ARM CMSIS-DSP library with 32-bit floating-point math, producing 512 frequency bins logarithmically mapped across 32 physical WS2812B LEDs with dynamic magnitude, color, and brightness scaling. Generated 800 kHz WS2812B control waveforms via Timer 2 PWM with nanosecond-precise bit-encoding (T0H/T1H pulse widths).",
+      "debugging_and_root_cause": "Diagnosed a 28 ms FFT execution bottleneck and sample drop condition via GDB profiling; resolved by migrating to CMSIS-DSP 32-bit floating-point assembly-optimized routines and loop unrolling, slashing FFT computation time to 15 ms. Verified ADC-to-SRAM DMA throughput using a logic analyzer, ensuring complete 1024-sample packet transfers within the 5 ms window without buffer overrun. Validated nanosecond WS2812B PWM high/low pulse widths against datasheet limits using a high-bandwidth digital storage oscilloscope. Confirmed worst-case end-to-end latency from audio input spike to LED update at 17 ms, successfully satisfying the <20 ms real-time requirement.",
+      "bullet_bank": {
+        "firmware_focus": "Implemented a bare-metal C CMSIS-DSP FFT pipeline on STM32F103C8 (Cortex-M3), processing 1024-point audio buffers in 15 ms and mapping 512 frequency bins to a 32-channel WS2812B LED array.",
+        "hardware_focus": "Configured continuous ADC1 sampling with DMA Channel 1 streaming into dedicated SRAM buffers alongside Timer 2 PWM generating nanosecond-accurate 800 kHz WS2812B timing waveforms, verified via oscilloscope.",
+        "systems_focus": "Profiled and resolved a 28 ms processing bottleneck using GDB and logic analyzers, reducing end-to-end audio-to-LED visual latency to 17 ms under strict 20 KB SRAM constraints."
+      }
+    },
+    {
+      "id": "nest-smartwatch-health-monitor",
+      "name": "NEST: Wearable Nursing Environment & Safety Tracker Smartwatch",
+      "organization_or_event": "Hackathon / Healthcare IoT & Wearable Systems",
+      "timeline": "2025-02 – 2025-03",
+      "tags": [
+        "ESP32",
+        "ESP-IDF",
+        "FreeRTOS",
+        "Dual-Core Concurrency",
+        "Mixed-Signal PCB",
+        "MAX30102 (PPG/SpO2)",
+        "ENS160 (Air Quality)",
+        "AHT21",
+        "MPU6500 (IMU)",
+        "SPI DMA",
+        "Power Optimization",
+        "SMD Soldering",
+        "KiCad"
+      ],
+      "technical_problem": "Engineering a battery-operated clinical wearable monitor capable of simultaneous high-frequency physiological (SpO2, heart rate) and environmental (VOC, eCO2, temperature, humidity, 6-DoF fall detection) anomaly tracking on an ESP32 without sensor data starvation, display rendering latency, or excessive battery drain in a compact form factor.",
+      "architecture_and_implementation": "Architected a dual-core FreeRTOS firmware stack on ESP32 Feather V2 using ESP-IDF. Dedicated Core 1 exclusively to high-frequency, jitter-free sensor acquisition across I2C (MAX30102 PPG for SpO2/HR, ENS160 for VOC/eCO2, AHT21 for temp/humidity) and SPI (MPU6500 6-axis IMU for fall detection algorithms). Allocated Core 0 to system management, Wi-Fi telemetry, and GUI rendering on a TFT LCD driven via SPI with Direct Memory Access (DMA) for non-blocking full-screen refreshes. Implemented thread-safe inter-core data pipelines using FreeRTOS queues, semaphores, and mutexes. Designed and laid out a custom 2-layer PCB to meet strict wearable physical constraints, executed solder paste stenciling and manual SMD assembly, and housed electronics inside a multi-part 3D-printed watch chassis.",
+      "debugging_and_root_cause": "Diagnosed display-induced task starvation on Core 0 during full-screen rendering; resolved by offloading TFT framebuffer updates to SPI DMA transfers, freeing Core 0 CPU cycles for anomaly detection and network handling. Implemented a granular power-aware sensor duty-cycling scheme: relegated low-priority environmental sensors (ENS160, AHT21) to deep-sleep modes with 30-second wake intervals while operating high-priority PPG sensors (MAX30102) in burst-sampling mode, substantially reducing battery current consumption. Validated 3.3V power rails, signal integrity, and noise margins across I2C/SPI buses under thermal load using multimeters and oscilloscopes.",
+      "bullet_bank": {
+        "firmware_focus": "Architected a dual-core ESP-IDF FreeRTOS firmware stack, isolating MAX30102/MPU6500 sensor acquisition to Core 1 and offloading TFT display refreshes via SPI DMA on Core 0.",
+        "hardware_focus": "Designed a compact 2-layer mixed-signal wearable PCB in KiCad and assembled prototype using solder paste stenciling and SMD hand-soldering, validating 3.3V power rails and I2C/SPI bus integrity via oscilloscope.",
+        "systems_focus": "Engineered power-aware sensor duty-cycling with 30s deep-sleep wake intervals and FreeRTOS inter-core queue synchronization, achieving continuous multi-modal clinical anomaly tracking in a 3D-printed wearable form factor."
+      }
+    },
+    {
+      "id": "ex-alta-3-obc-satellite",
+      "name": "Ex-Alta 3 CubeSat On-Board Computer (OBC) & Flight Software Platform",
+      "organization_or_event": "AlbertaSat / Space Systems & Satellite Engineering Team",
+      "timeline": "2024-09 – 2025-04",
+      "tags": [
+        "Embedded Linux",
+        "Yocto / PetaLinux",
+        "RTOS",
+        "Rust",
+        "VHDL / Verilog",
+        "FPGA",
+        "CubeSat",
+        "Aerospace / LEO",
+        "Radiation Hardening",
+        "CAN Bus",
+        "SPI",
+        "I2C",
+        "UART",
+        "Clean Room Testing",
+        "GDB"
+      ],
+      "technical_problem": "Architecting an ultra-reliable On-Board Computer (OBC) software and hardware platform for a 3U CubeSat operating in Low Earth Orbit (LEO) under harsh radiation and extreme thermal fluctuations. The system required robust fault tolerance against Single-Event Effects (SEEs), deterministic execution for time-critical attitude control (ADCS) and power management (EPS), zero-fault communication across internal satellite buses, and fail-safe remote commanding from ground stations.",
+      "architecture_and_implementation": "Contributed 7+ months of flight platform development to AlbertaSat's Ex-Alta 3 3U CubeSat mission. Deployed and configured a heterogeneous computing architecture combining custom Embedded Linux (built with Yocto/PetaLinux toolchains) for high-level operations (file systems, networking, command handling) with a mission-critical deterministic RTOS for time-sensitive control loops. Hardened low-level boot procedures via custom BIOS configuration, redundant multi-stage bootloaders, memory scrubbing, and secure watchdog reset circuits to mitigate radiation-induced Single-Event Effects (SEEs). Developed asynchronous flight software handlers and ground station CLI commanding tools in Rust, leveraging memory safety guarantees to prevent concurrency vulnerabilities. Contributed to digital logic design in VHDL/Verilog on FPGAs for hardware-accelerated telemetry encoding and high-speed data handling.",
+      "debugging_and_root_cause": "Conducted extensive hardware-in-the-loop (HIL) integration and qualification testing within AlbertaSat's ISO 8 (Class 100,000) clean room facility. Diagnosed and resolved signal degradation and communication race conditions across internal satellite buses (UART, SPI, I2C, CAN) interfacing ADCS, EPS, and payload subsystems using multi-channel logic analyzers and oscilloscopes. Authored comprehensive, version-controlled Test Procedures, Acceptance Test Reports (ATRs), and Verification Reports to ensure rigorous mission traceability and adherence to aerospace environmental flight standards.",
+      "bullet_bank": {
+        "firmware_focus": "Engineered low-level BIOS boot hardening and redundant bootloaders for custom Yocto/PetaLinux and RTOS environments on a 3U CubeSat OBC, mitigating radiation-induced Single-Event Effects (SEEs) in LEO.",
+        "hardware_focus": "Validated zero-fault telemetry across UART, SPI, I2C, and CAN buses interfacing ADCS and EPS subsystems inside an ISO 8 clean room facility using logic analyzers and digital oscilloscopes.",
+        "systems_focus": "Developed asynchronous flight software and ground station CLI tools in Rust with memory-safe concurrency, while prototyping VHDL/Verilog FPGA digital logic for hardware-accelerated payload data encoding."
+      }
+    }
+  ]
+}

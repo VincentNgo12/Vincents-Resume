@@ -1,0 +1,140 @@
+%-------------------------
+% Vincent Ngo Resume - Canonical Embedded/Hardware v1.0
+% Based on Jake Gutierrez's Resume (MIT License)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.62in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.22in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Vincent (Dam Duc Huy) Ngo} \\ \vspace{2pt}
+    \small Edmonton, AB $|$ (780) 938-4419 $|$
+    \href{mailto:damduchu@ualberta.ca}{\underline{damduchu@ualberta.ca}} $|$
+    \href{https://www.linkedin.com/in/vincent-ngo-ece}{\underline{linkedin.com/in/vincent-ngo-ece}} $|$
+    \href{https://github.com/VincentNgo12}{\underline{github.com/VincentNgo12}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Alberta}{Edmonton, AB}
+      {B.Sc. Computer Engineering, Co-op --- GPA: 3.8/4.0}{Expected 2029}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Electrical and Control Engineering Intern}{May 2026 -- Aug. 2026}
+      {Red Deer Polytechnic --- CIM-TAC / Energy Innovation Centre}{Red Deer, AB}
+      \resumeItemListStart
+        \resumeItem{Architected dual-core \textbf{FreeRTOS} firmware on ESP32-S3 and bare-metal C on PIC18F24Q10 for a non-invasive sensing system; reduced average current draw \textbf{70.4\% (85.71 mA to 25.33 mA)} using GPIO ISRs, task notifications, and sleep scheduling.}
+        \resumeItem{Engineered an in-circuit \textbf{Spy-Bi-Wire ROM bootloader} on ESP32-C6 for MSP430FR6043, streaming CRC-validated firmware at 115,200 baud; migrated BLE to NimBLE and reduced binary size by \textbf{600 KB (over 35\%)} for dual-image OTA.}
+        \resumeItem{Designed a \textbf{65 mm x 18 mm, 4-layer mixed-signal PCB} for an instrumented wheelchair curling stick, integrating ESP32-S3, IMU/force sensing, ideal-diode power paths, low-noise regulation, and 50 Hz BLE telemetry.}
+        \resumeItem{Commissioned a \textbf{4.5 kW, 230 VAC 3-phase servo system} with dual-channel Safe Torque Off and a custom isolated interface PCB; implemented 100 Hz closed-loop FreeRTOS tension control up to 300 lbf.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flight Software \& Embedded Systems Team Member}{2025 -- Present}
+      {AlbertaSat --- Ex-Alta 3 CubeSat}{Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Contributed to the Ex-Alta 3 3U CubeSat OBC platform spanning \textbf{Yocto/PetaLinux, RTOS, boot configuration, Rust flight software, and FPGA digital logic}.}
+        \resumeItem{Performed hardware-in-the-loop integration and clean-room qualification, debugging UART, SPI, I2C, and CAN interfaces with oscilloscopes and logic analyzers.}
+        \resumeItem{Developed Rust-based flight software handlers, ground-station CLI tooling, and automation for mission operations and telemetry handling.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Bare-Metal Real-Time Audio Spectrum Visualizer} $|$ \emph{STM32, C, CMSIS-DSP, DMA, PWM}}{2025}
+      \resumeItemListStart
+        \resumeItem{Built a register-level STM32F103C8 signal-processing pipeline using ADC + DMA and a 1024-point CMSIS-DSP FFT; reduced processing time from 28 ms to \textbf{15 ms} and achieved \textbf{17 ms end-to-end latency} under 20 KB SRAM constraints.}
+        \resumeItem{Generated 800 kHz WS2812B waveforms with timer PWM and validated DMA throughput and pulse timing using GDB, a logic analyzer, and oscilloscope.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{NEST Wearable Health Monitor} $|$ \emph{ESP32, ESP-IDF, FreeRTOS, KiCad}}{2026}
+      \resumeItemListStart
+        \resumeItem{Led development of a dual-core ESP-IDF/FreeRTOS wearable integrating PPG, IMU, air-quality, temperature, and humidity sensing with SPI-DMA display updates and inter-core synchronization.}
+        \resumeItem{Designed and assembled a compact mixed-signal PCB in KiCad, validating power rails and I2C/SPI integrity during hardware bring-up.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} C/C++, Rust, Python, Bash/PowerShell, VHDL, Verilog \\
+     \textbf{Embedded \& Systems:} FreeRTOS, ESP-IDF, bare-metal ARM, Yocto/PetaLinux, CMSIS-DSP, GDB \\
+     \textbf{Hardware:} STM32, ESP32, MSP430, PIC18, FPGA, UART, SPI, I2C, CAN, BLE, RS-485/Modbus \\
+     \textbf{Design \& Debug:} KiCad, Altium, Vivado, oscilloscope, logic analyzer, mixed-signal PCB bring-up, soldering
+    }}
+ \end{itemize}
+
+\end{document}
