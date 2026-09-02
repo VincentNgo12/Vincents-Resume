@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_date": "2026-08-23",
+  "generated_date": "2026-09-01",
   "metadata": {
     "target_domains": [
       "Embedded Systems",
@@ -357,6 +357,28 @@
         "hardware_focus": "Validated zero-fault telemetry across UART, SPI, I2C, and CAN buses interfacing ADCS and EPS subsystems inside an ISO 8 clean room facility using logic analyzers and digital oscilloscopes.",
         "systems_focus": "Developed asynchronous flight software and ground station CLI tools in Rust with memory-safe concurrency, while prototyping VHDL/Verilog FPGA digital logic for hardware-accelerated payload data encoding."
       }
+    }
+  ],
+  "honors_and_awards": [
+    {
+      "id": "ieee-northern-canada-scholarship-2026",
+      "name": "IEEE Northern Canada Section Scholarship",
+      "year": "2026"
+    },
+    {
+      "id": "robert-stollery-scholarship-2024-2025",
+      "name": "The Robert Stollery Scholarship in Engineering",
+      "year": "2024–2025"
+    },
+    {
+      "id": "albert-julian-hrapko-scholarship-2025",
+      "name": "The Albert Julian Hrapko Memorial Scholarship in Computer Engineering",
+      "year": "2025"
+    },
+    {
+      "id": "natignite-2025-third-place",
+      "name": "Third Place — Natignite 2025 Hackathon",
+      "year": "2025"
     }
   ]
 }
