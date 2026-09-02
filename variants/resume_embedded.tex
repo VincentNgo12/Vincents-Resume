@@ -1,0 +1,184 @@
+%=========================
+% Vincent Ngo Resume - Embedded Firmware Variant (2-page)
+% Based on Jake Gutierrez's Resume (MIT License)
+%=========================
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{6pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.52in}
+\addtolength{\evensidemargin}{-0.52in}
+\addtolength{\textwidth}{1.04in}
+\addtolength{\topmargin}{-.56in}
+\addtolength{\textheight}{1.10in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeAward}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & \small #2 \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.22in, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% HEADING
+\begin{center}
+    \textbf{\Huge Vincent (Dam Duc Huy) Ngo} \\ \vspace{2pt}
+    \small Edmonton, AB $|$ (780) 938-4419 $|$
+    \href{mailto:damduchu@ualberta.ca}{\underline{damduchu@ualberta.ca}} $|$
+    \href{https://www.linkedin.com/in/vincent-ngo-ece}{\underline{linkedin.com/in/vincent-ngo-ece}} $|$
+    \href{https://github.com/VincentNgo12}{\underline{github.com/VincentNgo12}}
+\end{center}
+
+% EDUCATION
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Alberta}{Edmonton, AB}
+      {B.Sc. Computer Engineering, Co-op - GPA: 3.8/4.0}{Expected 2029}
+  \resumeSubHeadingListEnd
+
+% ENGINEERING EXPERIENCE
+\section{Engineering Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Electrical and Control Engineering Intern}{May 2026 -- Aug. 2026}
+      {Red Deer Polytechnic - CIM-TAC / Energy Innovation Centre}{Red Deer, AB}
+      \resumeItemListStart
+        \resumeItem{Architected dual-core \textbf{FreeRTOS} firmware in C/C++ on ESP32-S3 with bare-metal C on PIC18F24Q10 for a field-deployed sensing platform; reduced average current draw \textbf{70.4\% (85.71 mA to 25.33 mA)} using GPIO ISRs, task notifications, peripheral power gating, and watchdog-based sleep scheduling.}
+        \resumeItem{Diagnosed a FreeRTOS soft-lock caused by queue blocking during E-paper task teardown and implemented a deterministic queue-bypass shutdown path; replaced static sensing thresholds with a rate-of-change state machine using a \textbf{300 s SRAM ring buffer} and EMA filtering.}
+        \resumeItem{Engineered an in-circuit \textbf{Spy-Bi-Wire ROM BSL flasher} in C++/FreeRTOS on ESP32-C6 for MSP430FR6043, streaming CRC-16 validated 240-byte payloads to 20-bit FRAM at 115,200 baud and eliminating parasitic back-powering through defensive High-Z GPIO sequencing.}
+        \resumeItem{Migrated embedded BLE firmware from Bluedroid to NimBLE, reducing static binary footprint by approximately \textbf{600 KB (over 35\%)} and enabling an 8 MB dual-image OTA partition layout with automated firmware staging and cross-platform build tooling.}
+        \resumeItem{Designed firmware and hardware for a \textbf{65 mm x 18 mm, 4-layer mixed-signal PCB} based on ESP32-S3, integrating IMU and force sensing with low-noise power rails and streaming 180-byte batched telemetry at 50 Hz over BLE to a companion application.}
+        \resumeItem{Implemented a \textbf{100 Hz FreeRTOS PID control task} on ESP32-S3 for a 4.5 kW servo system, interfacing isolated analog command/feedback, RS-485/Modbus, and 4-20 mA instrumentation while supporting safe hardware bring-up and troubleshooting.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flight Software \& Embedded Systems Team Member}{Sept. 2024 -- Apr. 2025}
+      {AlbertaSat - Ex-Alta 3 CubeSat}{Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Contributed 7+ months to a 3U CubeSat OBC platform spanning \textbf{embedded Linux (Yocto/PetaLinux), RTOS, BIOS/boot configuration, Rust flight software, and FPGA-based digital logic} for mission operations in LEO.}
+        \resumeItem{Developed asynchronous Rust flight-software handlers, ground-station CLI tooling, and automation scripts; supported fault-tolerant boot, watchdog, and telemetry workflows across the spacecraft computing stack.}
+        \resumeItem{Performed hardware-in-the-loop integration and ISO 8 clean-room qualification, debugging UART, SPI, I2C, and CAN interfaces with oscilloscopes and logic analyzers and authoring version-controlled verification documentation.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% PROJECT PAGE 1
+\section{Selected Embedded Project}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Bare-Metal Real-Time Audio Spectrum Visualizer} $|$ \emph{STM32, C, CMSIS-DSP, DMA, PWM}}{2025}
+      \resumeItemListStart
+        \resumeItem{Built a register-level STM32F103C8 firmware pipeline using ADC, DMA, timer interrupts, and a \textbf{1024-point CMSIS-DSP FFT}; profiled and reduced processing from 28 ms to \textbf{15 ms}, achieving \textbf{17 ms end-to-end latency} within a 20 KB SRAM budget.}
+        \resumeItem{Generated nanosecond-accurate 800 kHz WS2812B waveforms using timer PWM while maintaining non-blocking audio acquisition; validated DMA throughput and timing with GDB, a logic analyzer, and oscilloscope.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\newpage
+
+% SELECTED PROJECTS
+\section{Selected Embedded Systems Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{NEST Wearable Health Monitor} $|$ \emph{ESP32, ESP-IDF, FreeRTOS, KiCad}}{2025}
+      \resumeItemListStart
+        \resumeItem{Architected a dual-core ESP-IDF/FreeRTOS firmware stack separating high-rate PPG/IMU acquisition from GUI and Wi-Fi tasks, using queues, semaphores, mutexes, and SPI DMA to prevent display-induced task starvation.}
+        \resumeItem{Designed and assembled a compact 2-layer mixed-signal PCB integrating MAX30102, MPU6500, ENS160, and AHT21 sensors; validated 3.3 V rails and I2C/SPI signal integrity and implemented power-aware sensor duty cycling.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Automated Embedded Build \& Deployment Pipeline} $|$ \emph{Bash, PowerShell, WSL2, XC8}}{2026}
+      \resumeItemListStart
+        \resumeItem{Engineered a headless PowerShell/Bash build-and-flash pipeline around \texttt{arduino-cli} and native Linux \texttt{xc8-cc}, standardizing multi-target builds, flash layouts, and OTA/in-circuit firmware staging while cutting deployment overhead by \textbf{over 60\%}.}
+        \resumeItem{Resolved Windows/WSL compiler interoperability and path-translation failures by wrapping vendor toolchains in POSIX-compliant scripts and automating environment configuration for repeatable firmware builds.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{High-Throughput Serial \& BLE Telemetry Engine} $|$ \emph{C\#, .NET 8, System.IO.Pipelines}}{2026}
+      \resumeItemListStart
+        \resumeItem{Built a multithreaded telemetry engine using \texttt{System.IO.Pipelines} and thread-safe channels for resilient serial/BLE framing, checksum validation, mixed-endian decoding, and sustained diagnostic logging without UI-thread stalls.}
+        \resumeItem{Implemented a zero-allocation byte-stream framing reader and bounded background-worker pipeline, eliminating buffer backpressure stalls and packet loss during high-throughput hardware diagnostics.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% TECHNICAL SKILLS
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming:} C, C++, Embedded C, Rust, Python, C\#, Bash, PowerShell; multithreaded systems, CLI tools, Linux/POSIX environments \\
+     \textbf{Embedded \& Real-Time:} FreeRTOS, ESP-IDF, bare-metal ARM/CMSIS, task scheduling, queues, mutexes, task notifications, critical sections, GPIO, ADC, DMA, timers, ISRs, peripheral drivers \\
+     \textbf{MCUs \& Platforms:} STM32 (ARM Cortex-M), ESP32-S3/C6, MSP430FR6043, PIC18F24Q10, FPGA/SoC platforms \\
+     \textbf{Embedded Linux \& Toolchains:} Yocto Project, PetaLinux, Buildroot, WSL2, GNU Arm, Microchip XC8, TI CCS/MSP430 CGT, cross-compilation, boot/firmware utilities \\
+     \textbf{Protocols \& Connectivity:} UART/USART, SPI, I2C, CAN, BLE, Wi-Fi, TCP/IP, RS-485/Modbus RTU, 4-20 mA, JTAG/SWD, Spy-Bi-Wire \\
+     \textbf{Debugging \& Test:} Git, GDB, oscilloscopes, logic analyzers, DMMs, protocol analysis, Nordic PPK2, hardware bring-up, firmware debugging, hardware-software integration \\
+     \textbf{Hardware \& DSP:} KiCad, Altium Designer, mixed-signal PCB design, SMT assembly/rework, CMSIS-DSP, FFT, real-time signal processing, VHDL, Verilog, Vivado
+    }}
+ \end{itemize}
+
+% HONORS
+\section{Awards \& Scholarships}
+  \resumeSubHeadingListStart
+    \resumeAward{\textbf{IEEE Northern Canada Section Scholarship}}{2026}
+    \resumeAward{\textbf{The Albert Julian Hrapko Memorial Scholarship in Computer Engineering}}{2025}
+    \resumeAward{\textbf{The Robert Stollery Scholarship in Engineering}}{2024--2025}
+    \resumeAward{\textbf{Third Place - Natignite 2025 Hackathon}}{2025}
+  \resumeSubHeadingListEnd
+
+\end{document}
