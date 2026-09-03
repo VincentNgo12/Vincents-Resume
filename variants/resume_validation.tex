@@ -1,0 +1,192 @@
+%=========================
+% Vincent Ngo Resume - Silicon Validation and Hardware Integration Variant (2-page)
+% Based on Jake Gutierrez's Resume (MIT License)
+%=========================
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{6pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.52in}
+\addtolength{\evensidemargin}{-0.52in}
+\addtolength{\textwidth}{1.04in}
+\addtolength{\topmargin}{-.56in}
+\addtolength{\textheight}{1.10in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeAward}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & \small #2 \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.22in, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% HEADING
+\begin{center}
+    \textbf{\Huge Vincent (Dam Duc Huy) Ngo} \\ \vspace{2pt}
+    \small Edmonton, AB $|$ (780) 938-4419 $|$
+    \href{mailto:damduchu@ualberta.ca}{\underline{damduchu@ualberta.ca}} $|$
+    \href{https://www.linkedin.com/in/vincent-ngo-ece}{\underline{linkedin.com/in/vincent-ngo-ece}} $|$
+    \href{https://github.com/VincentNgo12}{\underline{github.com/VincentNgo12}}
+\end{center}
+
+% EDUCATION
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Alberta}{Edmonton, AB}
+      {B.Sc. Computer Engineering, Co-op - GPA: 3.8/4.0}{Expected 2029}
+  \resumeSubHeadingListEnd
+
+% ENGINEERING EXPERIENCE
+\section{Hardware, Validation \& Systems Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Electrical and Control Engineering Intern}{May 2026 -- Aug. 2026}
+      {Red Deer Polytechnic - CIM-TAC / Energy Innovation Centre}{Red Deer, AB}
+      \resumeItemListStart
+        \resumeItem{Designed, integrated, and debugged embedded platforms spanning \textbf{ESP32-S3/C6, MSP430FR6043, PIC18F24Q10, mixed-signal PCBs, sensors, power electronics, and industrial controls}, using oscilloscopes, logic analyzers, DMMs, protocol tools, and power profiling for root-cause analysis.}
+        \resumeItem{Engineered a \textbf{65 mm x 18 mm, 4-layer mixed-signal PCB} for a constrained biomechanical telemetry system, integrating IMU and force sensing, ideal-diode power-path management, low-noise analog rails, and 50 Hz BLE telemetry; diagnosed thermal IMU bias and reverse-current power faults during bring-up.}
+        \resumeItem{Commissioned a \textbf{230 VAC 3-phase, 4.5 kW servo system} with dual-channel Safe Torque Off, EMI filtering, isolated analog/digital interfaces, RS-485/Modbus, and 4-20 mA instrumentation; performed isolation checks, live measurements, regenerative-braking debug, and closed-loop system validation.}
+        \resumeItem{Developed an in-circuit \textbf{Spy-Bi-Wire ROM bootloader} on ESP32-C6 for MSP430FR6043 and traced target brownout/boot failures to parasitic back-powering across shared GPIOs, resolving the issue through High-Z sequencing and controlled power gating verified with a Nordic PPK2.}
+        \resumeItem{Architected dual-core FreeRTOS firmware for a sensing platform and reduced average current draw \textbf{70.4\% (85.71 mA to 25.33 mA)}; diagnosed a queue-related task shutdown soft-lock and validated interrupt-driven power-state behavior across hardware revisions.}
+        \resumeItem{Built repeatable firmware/test workflows across Windows and Linux by wrapping Microchip XC8, TI toolchains, and \texttt{arduino-cli}; migrated BLE to NimBLE to reduce binary size by approximately \textbf{600 KB (over 35\%)} and support dual-image OTA validation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flight Software \& Embedded Systems Team Member}{Sept. 2024 -- Apr. 2025}
+      {AlbertaSat - Ex-Alta 3 CubeSat}{Edmonton, AB}
+      \resumeItemListStart
+        \resumeItem{Performed hardware-in-the-loop integration and ISO 8 clean-room qualification for a 3U CubeSat OBC, debugging \textbf{UART, SPI, I2C, and CAN} interfaces among ADCS, EPS, and payload subsystems with oscilloscopes and logic analyzers.}
+        \resumeItem{Contributed to an OBC stack spanning \textbf{embedded Linux (Yocto/PetaLinux), RTOS, Rust flight software, BIOS/boot configuration, and VHDL/Verilog FPGA logic}; supported fault-tolerant boot, watchdog, telemetry, and hardware-software integration workflows.}
+        \resumeItem{Authored version-controlled test procedures, acceptance test reports, and verification documentation while tracing communication race conditions and signal-integrity issues across integrated spacecraft subsystems.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% PROJECT PAGE 1
+\section{Selected Hardware Validation Project}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Bare-Metal Real-Time Audio Spectrum Visualizer} $|$ \emph{STM32, C, CMSIS-DSP, DMA, PWM}}{2025}
+      \resumeItemListStart
+        \resumeItem{Built a register-level STM32F103C8 system using ADC, DMA, timers, and a \textbf{1024-point CMSIS-DSP FFT}; profiled a 28 ms bottleneck with GDB and reduced processing to \textbf{15 ms}, achieving 17 ms end-to-end latency within a 20 KB SRAM budget.}
+        \resumeItem{Validated ADC-to-SRAM DMA transfers and nanosecond-accurate 800 kHz WS2812B timer-PWM waveforms using a logic analyzer and oscilloscope, confirming timing margins and non-blocking operation under continuous acquisition.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\newpage
+
+% PROJECTS
+\section{Selected Hardware \& Systems Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{NEST Wearable Health Monitor} $|$ \emph{ESP32, ESP-IDF, FreeRTOS, KiCad}}{2025}
+      \resumeItemListStart
+        \resumeItem{Designed and assembled a compact 2-layer mixed-signal PCB integrating MAX30102, MPU6500, ENS160, and AHT21 sensors; performed hardware bring-up, 3.3 V rail validation, and I2C/SPI signal-integrity debugging with oscilloscopes and multimeters.}
+        \resumeItem{Architected dual-core FreeRTOS firmware with SPI DMA and inter-core synchronization, isolating high-rate sensor acquisition from display and Wi-Fi tasks and resolving display-induced task starvation during system integration.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{High-Throughput Serial \& BLE Telemetry Engine} $|$ \emph{C\#, .NET 8, System.IO.Pipelines}}{2026}
+      \resumeItemListStart
+        \resumeItem{Built a multithreaded diagnostic telemetry engine for serial/BLE hardware, implementing resilient packet framing, checksum validation, mixed-endian decoding, and bounded background pipelines for sustained logging without UI stalls.}
+        \resumeItem{Used the tooling to investigate high-rate embedded telemetry and disconnect behavior, eliminating buffer backpressure and packet-loss failure modes in host-side validation workflows.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Automated Embedded Build \& Test Deployment Pipeline} $|$ \emph{Bash, PowerShell, WSL2, XC8}}{2026}
+      \resumeItemListStart
+        \resumeItem{Automated multi-target firmware builds, binary staging, and in-circuit/OTA deployment around \texttt{arduino-cli} and native Linux \texttt{xc8-cc}, cutting build-and-flash overhead by \textbf{over 60\%} and improving repeatability across test hardware.}
+        \resumeItem{Resolved Windows/WSL path and vendor-toolchain interoperability failures through POSIX wrappers and environment automation, enabling reproducible diagnostics and firmware validation outside IDE-dependent workflows.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Biomechanical Telemetry Validation Dashboard} $|$ \emph{Flutter, Dart, BLE}}{2026}
+      \resumeItemListStart
+        \resumeItem{Developed a cross-platform diagnostic dashboard that decoded 180-byte BLE sensor frames, graphed multi-axis force and motion telemetry at 60 FPS, and logged synchronized sessions for hardware/firmware test analysis.}
+        \resumeItem{Eliminated UI frame drops and lifecycle-related memory leaks by moving binary parsing outside rendering widgets and isolating high-rate graph repaints, improving reliability during sustained system validation runs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% TECHNICAL SKILLS
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Hardware Validation \& Lab:} hardware bring-up, board/system integration, root-cause analysis, oscilloscopes, logic analyzers, DMMs, protocol analysis, Nordic PPK2, clean-room qualification, SMT assembly/rework \\
+     \textbf{Programming \& Scripting:} C, C++, Embedded C, Python, Rust, C\#, Bash, PowerShell; multithreaded systems, CLI tools, Linux/POSIX environments \\
+     \textbf{Embedded \& Real-Time:} FreeRTOS, ESP-IDF, bare-metal ARM/CMSIS, GPIO, ADC, DMA, timers, ISRs, peripheral drivers, bootloaders, firmware debugging \\
+     \textbf{MCUs \& Compute:} STM32 (ARM Cortex-M), ESP32-S3/C6, MSP430FR6043, PIC18F24Q10, FPGA/SoC platforms, RISC-V MCU exposure \\
+     \textbf{Embedded Linux \& Toolchains:} Yocto Project, PetaLinux, Buildroot, WSL2, GNU Arm, Microchip XC8, TI CCS/MSP430 CGT, Git, GDB, cross-compilation \\
+     \textbf{Digital \& FPGA:} VHDL, Verilog, Vivado, FPGA digital logic, FSMs, digital systems; exposure to hardware-accelerated telemetry logic \\
+     \textbf{Protocols \& Interfaces:} UART/USART, SPI, I2C, CAN, BLE, Wi-Fi, TCP/IP, RS-485/Modbus RTU, 4-20 mA, JTAG/SWD, Spy-Bi-Wire \\
+     \textbf{PCB \& Signal Processing:} KiCad, Altium Designer, mixed-signal PCB design, DFM/DFA, CMSIS-DSP, FFT, real-time signal processing
+    }}
+ \end{itemize}
+
+% HONORS
+\section{Awards \& Scholarships}
+  \resumeSubHeadingListStart
+    \resumeAward{\textbf{IEEE Northern Canada Section Scholarship}}{2026}
+    \resumeAward{\textbf{The Albert Julian Hrapko Memorial Scholarship in Computer Engineering}}{2025}
+    \resumeAward{\textbf{The Robert Stollery Scholarship in Engineering}}{2024--2025}
+    \resumeAward{\textbf{Third Place - Natignite 2025 Hackathon}}{2025}
+  \resumeSubHeadingListEnd
+
+\end{document}
